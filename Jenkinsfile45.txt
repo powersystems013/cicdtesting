@@ -15,7 +15,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    dockerImage = docker.build("kiet019/rajtestimage:${env.BUILD_ID}")
+                    dockerImage = docker.build("gahlotrajneesh2006@gmail.com/rajtestimage:${env.BUILD_ID}")
                 }
             }
         }
@@ -32,7 +32,7 @@ pipeline {
 
         stage('Clean Up') {
             steps {
-                sh "docker rmi kiet019/rajtestimage:${env.BUILD_ID}"
+                sh "docker rmi gahlotrajneesh2006@gmail.com/rajtestimage:${env.BUILD_ID}"
             }
         }
     }
