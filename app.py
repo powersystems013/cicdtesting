@@ -19,7 +19,7 @@ app = FastAPI()
  
 @app.get("/")
 def read_root():
-ns    return {"Hello": "Jenkins CI/CD Pipeline Setup for Web App Deployment on AWS EKS Cluster"}
+    return {"Hello": "Jenkins CI/CD Pipeline for Web Application Deployment on EKS Cluster"}
  
 handler = mangum.Mangum(app)
  
